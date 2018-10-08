@@ -6,11 +6,11 @@ Pod::Spec.new do |spec|
                        CryptoEthereumSwift implements necessary cryptographic features for Ethereum. This framwork is currently used in EthereumKit.
                        ```
                     DESC
-  spec.homepage = 'https://github.com/pedromcunha/CryptoEthereumSwift'
+  spec.homepage = 'https://github.com/horizontalsystems/CryptoEthereumSwift'
   spec.license = { :type => 'Apache 2.0', :file => 'LICENSE' }
   spec.author = { 'Ryo Fukuda' => 'yuzushioh' }
 
-  spec.source = { git: 'https://github.com/pedromcunha/CryptoEthereumSwift', tag: "v#{spec.version}" }
+  spec.source = { git: 'https://github.com/horizontalsystems/CryptoEthereumSwift', tag: "v#{spec.version}" }
   spec.source_files = 'CryptoEthereumSwift/**/*.{h,m,swift}'
   spec.ios.deployment_target = '9.0'
   spec.swift_version = '4.0'
@@ -19,5 +19,6 @@ Pod::Spec.new do |spec|
                                'SWIFT_INCLUDE_PATHS' => '${PODS_ROOT}/CryptoEthereumSwift/Libraries',
                                'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/CryptoEthereumSwift/Libraries/openssl/include" "${PODS_ROOT}/CryptoEthereumSwift/Libraries/secp256k1/include"',
                                'LIBRARY_SEARCH_PATHS' => '"${PODS_ROOT}/CryptoEthereumSwift/Libraries/openssl/lib" "${PODS_ROOT}/CryptoEthereumSwift/Libraries/secp256k1/lib"' }
+  spec.preserve_paths = ['Setup', 'Libraries']
   spec.dependency 'CryptoSwift'
 end
