@@ -12,6 +12,7 @@ Pod::Spec.new do |spec|
 
   spec.source = { git: 'https://github.com/horizontalsystems/CryptoEthereumSwift', tag: "v#{spec.version}" }
   spec.source_files = 'CryptoEthereumSwift/**/*.{h,m,swift}'
+  spec.module_map = 'CryptoEthereumSwift/Support Files/CryptoEthereumSwift.modulemap'
   spec.ios.deployment_target = '9.0'
   spec.swift_version = '4.0'
   spec.pod_target_xcconfig = { 'SWIFT_WHOLE_MODULE_OPTIMIZATION' => 'YES',
