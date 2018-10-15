@@ -1,4 +1,4 @@
-import secp256k1
+import secp256k1lib
 import CryptoSwift
 
 /// Convenience class over libsecp256k1 methods
