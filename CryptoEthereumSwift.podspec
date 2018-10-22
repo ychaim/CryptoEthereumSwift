@@ -15,9 +15,7 @@ Pod::Spec.new do |spec|
   spec.module_map = 'CryptoEthereumSwift/SupportingFiles/CryptoEthereumSwift.modulemap'
   spec.ios.deployment_target = '9.0'
   spec.swift_version = '4.0'
-  spec.pod_target_xcconfig = { 'SWIFT_WHOLE_MODULE_OPTIMIZATION' => 'YES',
-                               'APPLICATION_EXTENSION_API_ONLY' => 'YES',
-                               'SWIFT_INCLUDE_PATHS' => '${PODS_ROOT}/CryptoEthereumSwift/Libraries',
+  spec.pod_target_xcconfig = { 'SWIFT_INCLUDE_PATHS' => '${PODS_ROOT}/CryptoEthereumSwift/Libraries',
                                'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/CryptoEthereumSwift/Libraries/openssl/include" "${PODS_ROOT}/CryptoEthereumSwift/Libraries/secp256k1/include"',
                                'LIBRARY_SEARCH_PATHS' => '"${PODS_ROOT}/CryptoEthereumSwift/Libraries/openssl/lib" "${PODS_ROOT}/CryptoEthereumSwift/Libraries/secp256k1/lib"' }
   spec.preserve_paths = ['Setup', 'Libraries']
